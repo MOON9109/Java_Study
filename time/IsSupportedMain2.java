@@ -9,6 +9,7 @@ public class IsSupportedMain2 {
         //LocalDate에는 시,분,초가 없다
         LocalDate now = LocalDate.now();
 
+        //가능한지 체크
         boolean supported = now.isSupported(ChronoField.SECOND_OF_MINUTE);
         System.out.println("supported = " + supported);
         if(supported){
